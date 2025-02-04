@@ -8,7 +8,7 @@ class VideoStreamConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         if self.scope["user"].is_authenticated:
             await self.accept()
-            self.camera = cv2.VideoCapture(0) # 0 is default camera
+            self.camera = cv2.VideoCapture(0) # 0 is default camera, TODO: refactor this line, only one client has access to the camera at any time (rabbitmq?)
             asyncio.create_task(self.send_video_frames())
         else:
            await self.close()
