@@ -1,6 +1,6 @@
 # VideoFeedWebApp
 
-## Run the server server (modify the url in index.html to the ip of the server)
+## Run the server (modify the url in index.html to the ip of the server)
 python manage.py runserver 0.0.0.0:8000
 
 ## Add a super user (admin) via command line
