@@ -25,10 +25,7 @@ SECRET_KEY = 'django-insecure-aradypouw54rc^epuj28yxd#8nz&im6b=rzfb6_r40xk+v=(7#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
-#LOGIN_URL = '/accounts/login/'  # Use the default Django login URL
-
+ALLOWED_HOSTS = ['*'] # accept all hosts: unsafe!
 
 # Application definition
 
