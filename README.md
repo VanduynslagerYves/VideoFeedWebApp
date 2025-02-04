@@ -7,4 +7,4 @@ python manage.py runserver 0.0.0.0:8000
 python manage.py createsuperuser
 
 ## Add other users via Django forms
-http://127.0.0.1:8000/admin/
+http://[server-address]:8000/admin/
