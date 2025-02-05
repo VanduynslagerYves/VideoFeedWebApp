@@ -43,8 +43,6 @@ class VideoStreamPublisher:
             _, buffer = cv2.imencode('.jpg', frame)
             img_str = base64.b64encode(buffer).decode("utf-8")
 
-            #self.channel.basic_qos()
-
             self.channel.basic_publish(exchange="", routing_key=QUEUE_NAME, body=img_str)
 
             time.sleep(0.03)
