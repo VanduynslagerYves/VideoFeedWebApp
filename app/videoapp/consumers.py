@@ -2,8 +2,6 @@ import cv2
 import base64
 import asyncio
 from channels.generic.websocket import AsyncWebsocketConsumer
-from channels.db import database_sync_to_async
-from asgiref.sync import async_to_sync
 
 class VideoStreamConsumer(AsyncWebsocketConsumer):
     async def connect(self):
